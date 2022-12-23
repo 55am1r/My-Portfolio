@@ -1,0 +1,17 @@
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  scrollbar-width: none;
+}
+
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  position: relative;
+  --primary-color: #2c3e50;
+  --secondary-color: #bdc3c7;
+}

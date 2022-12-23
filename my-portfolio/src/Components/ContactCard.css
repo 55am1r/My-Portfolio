@@ -1,0 +1,54 @@
+.contact-card {
+    --primary-color: #2c3e50;
+    --secondary-color: #bdc3c7;
+    background-color: #ffffff2d;
+    border-radius: 10px;
+}
+
+.contact-card a {
+    display: flex;
+    gap: 20px;
+    padding: 12px 25px;
+}
+
+.contact-card a,
+.contact-card a i {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.contact-card:hover {
+    background-color: #ffffff54;
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+
+    .contact-card a,
+    .contact-card a i {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:500px)and (max-width:799px) {
+
+    .contact-card a,
+    .contact-card a i {
+        font-size: 1.6rem;
+    }
+
+    .contact-card {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:500px) {
+    .contact-card {
+        width: 80%;
+    }
+
+    .contact-card a,
+    .contact-card a i {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,93 @@
+.contact {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+    --primary-color: #2c3e50;
+    --secondary-color: #bdc3c7;
+    background-color: var(--primary-color);
+    padding: 20px 0 50px 0;
+}
+
+.contact h1 {
+    font-size: 7rem;
+    color: var(--secondary-color);
+    font-weight: 450;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.contact h1 hr {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    width: 5%;
+    margin-inline: auto;
+}
+
+.btn-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 40px;
+    margin-top: 20px;
+    padding: 40px 10px;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.end p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+@keyframes fade-in-out {
+    0% {
+        width: 5%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+    .btn-box {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:500px) {
+    .btn-box {
+        gap: 10px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .contact h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:501px)and (max-width:799px) {
+    .btn-box {
+        gap: 10px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .contact h1 {
+        font-size: 4rem;
+    }
+}

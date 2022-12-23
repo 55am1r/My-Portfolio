@@ -1,0 +1,87 @@
+.about {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+    --primary-color: #2c3e50;
+    --secondary-color: #bdc3c7;
+    background-color: #d7dbde;
+    padding: 20px 0 50px 0;
+}
+
+.about h1 {
+    font-size: 7rem;
+    color: var(--primary-color);
+    font-weight: 450;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.about h1 hr {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    width: 5%;
+    margin-inline: auto;
+}
+
+.about p,
+.about p span {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .3rem;
+    text-align: justify;
+}
+
+.about p span {
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 350;
+}
+
+@keyframes fade-in-out {
+    0% {
+        width: 5%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1279px)and (max-width:1440px) {
+    .res-1280 {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+    .res-1280 {
+        padding: 0 100px;
+    }
+
+    .about p {
+        padding: 0 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:799px) {
+    .about h1 {
+        font-size: 5rem;
+    }
+
+    .about p,
+    .about p span {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        padding: 0 40px;
+        text-align: center;
+    }
+}

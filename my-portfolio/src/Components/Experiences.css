@@ -1,0 +1,123 @@
+.experiences {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px 0px;
+    gap: 40px;
+    background-color: #dce0e3;
+    --primary-color: #2c3e50;
+    --secondary-color: #bdc3c7;
+}
+
+.experiences h1 {
+    font-size: 7rem;
+    color: var(--primary-color);
+    font-weight: 450;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.experiences h1 hr {
+    width: 5%;
+    margin-inline: auto;
+    border: 1.2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.experiences .flex-box {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+
+}
+
+.flex-box .scroll-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.scroll-btn i {
+    cursor: pointer;
+    position: absolute;
+    font-size: 4rem;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.scroll-btn i:nth-child(1) {
+    bottom: 10px;
+    right: 10px;
+}
+
+.scroll-btn i:nth-child(2) {
+    bottom: 10px;
+    left: 10px;
+}
+
+.dots {
+    display: flex;
+    gap: 20px;
+}
+
+.dots .span {
+    background-color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+.experiences .flex-box::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (min-width:1279px) and (max-width:1441px) {
+    .experiences .flex-box {
+        height: 500px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+    .experiences .flex-box {
+        height: 540px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width:300px)and (max-width:799px) {
+    .experiences h1 {
+        font-size: 4rem;
+    }
+
+    .experiences {
+        gap: 20px;
+    }
+
+    .experiences .flex-box {
+        height: 540px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:501px)and (max-width:799px) {
+    .experiences .flex-box {
+        height: 450px;
+        width: 90%;
+    }
+}

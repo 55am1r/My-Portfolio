@@ -1,0 +1,63 @@
+.Learning {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    text-align: center;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: .2s linear;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.Learning img {
+    width: 100%;
+    object-fit: contain;
+    height: 45px;
+}
+
+.Learning p {
+    font-weight: 450;
+    color: #2c3e50;
+}
+
+.Learning:hover {
+    transform: translateY(-10px) scale(1.05, 1.05);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@media screen and (min-width:1279px)and (max-width:1440px) {
+    .Learning img {
+        height: 25px;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+    .Learning {
+        padding: 10px 20px;
+    }
+
+    .Learning img {
+        height: 25px;
+    }
+}
+
+@media screen and (min-width:501px)and (max-width:799px) {
+    .Learning {
+        padding: 10px 20px;
+    }
+
+    .Learning img {
+        height: 25px;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:500px) {
+    .Learning {
+        padding: 10px 20px;
+    }
+
+    .Learning img {
+        height: 25px;
+    }
+}

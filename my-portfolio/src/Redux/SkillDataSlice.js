@@ -8,7 +8,7 @@ const initialState = {
     { title: "C#", value: 80 },
     { title: "SQL", value: 80 },
     { title: "HTML", value: 95 },
-    { title: "CSS", value: 90 },
+    { title: "CSS", value: 95 },
     { title: "Git", value: 90 },
   ],
   skillLearning: [

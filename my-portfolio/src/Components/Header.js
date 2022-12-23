@@ -13,7 +13,7 @@ function Header() {
       if (entry[0].isIntersecting) {
         nameTyper.current.classList.remove("animate-p-1");
         nameTyper.current.classList.add("animate-p-2");
-        observer1.unobserve(nameTyper.current);
+        menuToggle.current.classList.remove("right-toggle");
       }
     },
     { threshold: 1 }

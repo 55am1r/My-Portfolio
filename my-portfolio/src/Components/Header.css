@@ -13,6 +13,7 @@
     padding: 10px 0;
     --primary-color: #2c3e50;
     --secondary-color: #bdc3c7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .animate-nav-down {
@@ -30,9 +31,9 @@
 }
 
 .tracker .left-icon img {
-    width: 80px;
+    width: 60px;
     object-fit: cover;
-    height: 80px;
+    height: 60px;
     background-color: var(--primary-color);
 }
 
@@ -84,7 +85,7 @@
     position: fixed;
     border: 2px solid rgb(255, 255, 255, 0.2);
     background-image: linear-gradient(50deg, var(--border-color), var(--primary-color), var(--secondary-color));
-    top: 100px;
+    top: 80px;
     left: 0;
     width: 0%;
     height: 10px;

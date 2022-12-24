@@ -10,7 +10,7 @@ function ProjectCard(props) {
         slideImages();
       }
     },
-    { threshold: 0.7 }
+    { threshold: 0.5 }
   );
 
   useEffect(() => {
@@ -44,9 +44,11 @@ function ProjectCard(props) {
       }
     }, 3000);
   }
-
+  function handleMouseOver() {
+    
+  }
   return (
-    <div className="project-card">
+    <div className="project-card" onMouseOver={handleMouseOver}>
       <div className="images" ref={imagesBlock} id="images"></div>
       <p>
         Project Name: <span>{props.title}</span>

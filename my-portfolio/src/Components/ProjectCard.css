@@ -13,6 +13,7 @@
     border-radius: 10px;
     padding: 20px 20px;
     transition: .2s ease-in-out;
+    position: relative;
 }
 
 .project-card .images::-webkit-scrollbar {
@@ -30,6 +31,7 @@
     border-left: 1px solid var(--primary-color);
     border-right: 1px solid var(--primary-color);
     transition: .2s linear;
+
 }
 
 .project-card .images img {
@@ -57,6 +59,18 @@
     font-weight: 500;
     text-decoration: none;
     color: var(--primary-color);
+    padding: 2px 8px;
+    transition: .2s ease-in-out;
+}
+
+.project-card p span a:focus {
+    outline: none;
+}
+
+.project-card p span a:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }
 
 .project-card:hover {
@@ -64,8 +78,25 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.project-card:hover.images {
-    filter: brightness(0px)
+.project-card::before {
+    content: ' ';
+    position: absolute;
+    width: 91%;
+    height: 220px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    margin: 20px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.project-card:hover::before {
+    opacity: 0.3;
 }
 
 @media screen and (min-width:2560px) {

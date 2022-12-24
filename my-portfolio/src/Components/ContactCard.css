@@ -3,6 +3,8 @@
     --secondary-color: #bdc3c7;
     background-color: #ffffff2d;
     border-radius: 10px;
+    transition: .2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .contact-card a {
@@ -19,7 +21,8 @@
 }
 
 .contact-card:hover {
-    background-color: #ffffff54;
+    background-color: #ffffff4d;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 @media screen and (min-width:800px)and (max-width:1278px) {

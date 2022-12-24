@@ -14,6 +14,7 @@
     padding: 20px 20px;
     transition: .2s ease-in-out;
     position: relative;
+    overflow: hidden;
 }
 
 .project-card .images::-webkit-scrollbar {
@@ -24,14 +25,13 @@
     height: 220px;
     display: flex;
     flex-flow: row;
-    gap: 10px;
+    gap: 20px;
     overflow-x: scroll;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-left: 1px solid var(--primary-color);
-    border-right: 1px solid var(--primary-color);
+    border-radius: 10px;
+    /* border-left: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color); */
     transition: .2s linear;
-
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .project-card .images img {
@@ -83,20 +83,18 @@
     position: absolute;
     width: 91%;
     height: 220px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    right: 0%;
+    top: 0%;
     background-color: rgb(0, 0, 0);
     opacity: 0;
     margin: 20px 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transition: .2s ease-in-out;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    opacity: 0;
 }
 
 .project-card:hover::before {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 @media screen and (min-width:2560px) {

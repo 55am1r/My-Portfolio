@@ -1,0 +1,102 @@
+.project-card {
+    width: 40%;
+    height: calc(100% - 0%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    margin-inline: auto;
+    background-color: #fff;
+    --primary-color: #2c3e50;
+    --secondary-color: #bdc3c7;
+    border-radius: 10px;
+    padding: 20px 20px;
+    transition: .2s ease-in-out;
+}
+
+.project-card .images::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card .images {
+    height: 220px;
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    overflow-x: scroll;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+    transition: .2s linear;
+}
+
+.project-card .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-card p {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 550;
+}
+
+.project-card p span {
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+.project-card p span a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.project-card:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.project-card:hover.images {
+    filter: brightness(0px)
+}
+
+@media screen and (min-width:2560px) {
+    .project-card {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2559px) {
+    .project-card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1279px) and (max-width:1919px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width:1278px) {
+    .project-card {
+        width: 80%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:799px) {
+
+    .project-card {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}

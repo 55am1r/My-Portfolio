@@ -17,11 +17,11 @@
 }
 
 .animate-nav-down {
-    animation: swipe-down .5s forwards linear;
+    animation: swipe-down .2s forwards linear;
 }
 
 .animate-nav-up {
-    animation: swipe-up .5s forwards linear;
+    animation: swipe-up .2s forwards linear;
 }
 
 .tracker .left-icon {
@@ -261,6 +261,14 @@
 
     .main-header .right img {
         width: 260px;
+    }
+
+    .tracker .right-nav ul {
+        gap: 5px;
+    }
+
+    .tracker .right-nav ul li a {
+        font-size: 1.6rem;
     }
 }
 

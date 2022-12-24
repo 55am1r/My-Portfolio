@@ -1,6 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import pic_1 from "../Media/express.png";
 import pic_2 from "../Media/node.png";
+import w_1_img from "../Media/weather_api/1.jpg";
+import w_2_img from "../Media/weather_api/2.jpg";
+import n_1_img from "../Media/notes_app/1.jpg";
+import n_2_img from "../Media/notes_app/2.jpg";
+import n_3_img from "../Media/notes_app/3.jpg";
+import ns_1_img from "../Media/news_selector/1.jpg";
+import ns_2_img from "../Media/news_selector/2.jpg";
+import ns_3_img from "../Media/news_selector/3.jpg";
 const initialState = {
   dataList: [
     { title: "Java", value: 85 },
@@ -78,6 +85,35 @@ understanding of MVC concepts and data migrations.`,
       title: "Do Connect on LinkedIn",
       link: "https://www.linkedin.com/in/sameer-shaik-mohammed-32b3ab20a/",
       icon: ["fa-brands", "fa-linkedin"],
+    },
+  ],
+  projects: [
+    {
+      title: "Weather-API",
+      responsive: "Yes",
+      codeLink: "https://github.com/55am1r/Weather-API-demo",
+      deployed: "Yes",
+      deployedIn: "https://app.netlify.com/",
+      deployLink: "https://web-api-demo.netlify.app/",
+      images: [w_1_img, w_2_img],
+    },
+    {
+      title: "Notes-App",
+      responsive: "Yes",
+      codeLink: "https://github.com/55am1r/Notes-app-project",
+      deployed: "Yes",
+      deployedIn: "https://app.netlify.com/",
+      deployLink: "https://notes-app-with-react-ss.netlify.app/",
+      images: [n_1_img, n_2_img, n_3_img],
+    },
+    {
+      title: "Infinite-News",
+      responsive: "Yes",
+      codeLink: "https://github.com/55am1r/News-Selector-Project",
+      deployed: "No",
+      deployedIn: "----",
+      deployLink: "----",
+      images: [ns_1_img, ns_2_img, ns_3_img],
     },
   ],
 };

@@ -84,10 +84,13 @@ function Header() {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Skill's</a>
             </li>
             <li>
-              <a href="#experience">Experiences</a>
+              <a href="#experience">Experience's</a>
+            </li>
+            <li>
+              <a href="#projects">Project's</a>
             </li>
             <li>
               <a href="#contact">Let's Connect</a>
@@ -136,6 +139,16 @@ function Header() {
               }}
             >
               Experiences
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={() => {
+                handleMenuToggle("#projects");
+              }}
+            >
+              Project's
             </a>
           </li>
           <li>

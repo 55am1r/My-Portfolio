@@ -5,7 +5,6 @@ function ProjectCard(props) {
 
   const observer = new IntersectionObserver(
     (entry) => {
-      console.log(entry[0]);
       if (entry[0].isIntersecting) {
         slideImages();
       }

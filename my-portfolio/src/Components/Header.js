@@ -7,7 +7,6 @@ function Header() {
   const loaderScroll = useRef();
   const tracker = useRef();
   const menuToggle = useRef();
-
   const observer1 = new IntersectionObserver(
     (entry) => {
       if (entry[0].isIntersecting) {
@@ -61,7 +60,9 @@ function Header() {
       window.location.href = load;
     }
   }
-
+  function handleNav(load) {
+    window.location.href = load;
+  }
   useEffect(() => {
     loaderScrollHandle();
     observer1.observe(nameTyper.current);
@@ -78,22 +79,64 @@ function Header() {
         <div className="right-nav">
           <ul>
             <li>
-              <a href="#header">Home</a>
+              <a
+                href="#header"
+                onClick={() => {
+                  handleNav("#header");
+                }}
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                onClick={() => {
+                  handleNav("#about");
+                }}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills">Skill's</a>
+              <a
+                href="#skills"
+                onClick={() => {
+                  handleNav("#skills");
+                }}
+              >
+                Skill's
+              </a>
             </li>
             <li>
-              <a href="#experience">Experience's</a>
+              <a
+                href="#experience"
+                onClick={() => {
+                  handleNav("#experience");
+                }}
+              >
+                Experience's
+              </a>
             </li>
             <li>
-              <a href="#projects">Project's</a>
+              <a
+                href="#projects"
+                onClick={() => {
+                  handleNav("#projects");
+                }}
+              >
+                Project's
+              </a>
             </li>
             <li>
-              <a href="#contact">Let's Connect</a>
+              <a
+                href="#contact"
+                onClick={() => {
+                  handleNav("#contact");
+                }}
+              >
+                Let's Connect
+              </a>
             </li>
           </ul>
           <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>

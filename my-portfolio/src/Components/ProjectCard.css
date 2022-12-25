@@ -28,8 +28,6 @@
     gap: 20px;
     overflow-x: scroll;
     border-radius: 10px;
-    /* border-left: 1px solid var(--primary-color);
-    border-right: 1px solid var(--primary-color); */
     transition: .2s linear;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -127,5 +125,17 @@
     .project-card {
         width: 100%;
         padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:401px)and (max-width:500px) {
+    .project-card::before {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:300px)and (max-width:400px) {
+    .project-card::before {
+        width: 87%;
     }
 }

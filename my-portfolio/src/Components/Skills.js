@@ -190,12 +190,8 @@ function Skills() {
             <ul>
               {skillLearningData.map((node) => {
                 return (
-                  <li>
-                    <SkillLearning
-                      key={node.name}
-                      name={node.name}
-                      image={node.img}
-                    />
+                  <li key={node.img}>
+                    <SkillLearning name={node.name} image={node.img} />
                   </li>
                 );
               })}
